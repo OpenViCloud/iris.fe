@@ -11,7 +11,6 @@ permissions:
 
 env:
   IMAGE_NAME: ghcr.io/openvicloud/iris.fe
-  BUILD_TARGET: final
   KUBECTL_VERSION: v1.30.5
   BUILD_CONFIGURATION: Release
 
@@ -53,7 +52,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          target: ${{ env.BUILD_TARGET }}
           push: true
           platforms: linux/arm64
           tags: ${{ steps.meta.outputs.tags }}
