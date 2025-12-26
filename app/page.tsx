@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { fetchGatewayApi, logout } from "../services/gatewayApi";
 import apiLinks from "@/utils/api-links";
 
-const API_URL = "http://localhost:5230/iris/api/apps";
-
 export default function TestPage() {
   const [data, setData] = useState<any>(null);
   const [status, setStatus] = useState<"loading" | "done" | "error">("loading");
