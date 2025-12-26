@@ -8,6 +8,8 @@ const apiLinks = {
   },
   apps: {
     getApps: `${GATEWAY_BASE}/iris/api/apps`,
+    createApp: `${GATEWAY_BASE}/iris/api/apps`,
+    cleanUp: `${GATEWAY_BASE}/iris/api/apps/cleanup`,
   },
 };
 
