@@ -14,7 +14,7 @@ export default function TestPage() {
 
   async function fetchData() {
     try {
-      const json = await fetchGatewayApi(apiLinks.apps.getApps, true);
+      const json = await fetchGatewayApi(apiLinks.apps.getApps);
       setData(json);
       setStatus("done");
     } catch (err) {
